@@ -1,0 +1,30 @@
+section.intro {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        margin-top: 1.5rem;
+    }
+    
+    hr {
+        border-style: solid;
+        border-color: $black;
+        margin: 1rem 0;
+        width: 2rem;
+    }
+    > div {
+        display: flex;
+        &:first-of-type {
+            flex-direction: column;
+        }
+        &:last-of-type {
+            margin-top: 1rem;
+            width: 66.666%;
+            font-weight: 700;
+        }
+    }
+}
